@@ -46,10 +46,10 @@ jobs:
 workflows:
   my_workflow:
     jobs:
-      - build
+      - builds
       - test:
           requires:
-            - build
+            - builds
       - analyze:
           requires:
             - test
